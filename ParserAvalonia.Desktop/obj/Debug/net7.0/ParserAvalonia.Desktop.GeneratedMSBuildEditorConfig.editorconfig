@@ -13,4 +13,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ParserAvalonia.Desktop
-build_property.ProjectDir = D:\myProject\ParserAvaloniaTest\ParserAvalonia.Desktop\
+build_property.ProjectDir = D:\ParserAvaloniaTest\ParserAvalonia.Desktop\

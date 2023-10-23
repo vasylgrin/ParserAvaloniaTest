@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\myProject\\ParserAvalonia.Desktop\\ParserAvalonia.Desktop.csproj": {}
+    "D:\\ParserAvaloniaTest\\ParserAvalonia.Desktop\\ParserAvalonia.Desktop.csproj": {}
   },
   "projects": {
-    "D:\\myProject\\ParserAvalonia.Desktop\\ParserAvalonia.Desktop.csproj": {
+    "D:\\ParserAvaloniaTest\\ParserAvalonia.Desktop\\ParserAvalonia.Desktop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\myProject\\ParserAvalonia.Desktop\\ParserAvalonia.Desktop.csproj",
+        "projectUniqueName": "D:\\ParserAvaloniaTest\\ParserAvalonia.Desktop\\ParserAvalonia.Desktop.csproj",
         "projectName": "ParserAvalonia.Desktop",
-        "projectPath": "D:\\myProject\\ParserAvalonia.Desktop\\ParserAvalonia.Desktop.csproj",
+        "projectPath": "D:\\ParserAvaloniaTest\\ParserAvalonia.Desktop\\ParserAvalonia.Desktop.csproj",
         "packagesPath": "C:\\Users\\vasyl\\.nuget\\packages\\",
-        "outputPath": "D:\\myProject\\ParserAvalonia.Desktop\\obj\\",
+        "outputPath": "D:\\ParserAvaloniaTest\\ParserAvalonia.Desktop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vasyl\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\myProject\\ParserAvalonia\\ParserAvalonia.csproj": {
-                "projectPath": "D:\\myProject\\ParserAvalonia\\ParserAvalonia.csproj"
+              "D:\\ParserAvaloniaTest\\ParserAvalonia\\ParserAvalonia.csproj": {
+                "projectPath": "D:\\ParserAvaloniaTest\\ParserAvalonia\\ParserAvalonia.csproj"
               }
             }
           }
@@ -46,7 +46,7 @@
           "dependencies": {
             "Avalonia.Desktop": {
               "target": "Package",
-              "version": "[11.0.2, )"
+              "version": "[11.0.5, )"
             }
           },
           "imports": [
@@ -69,14 +69,14 @@
         }
       }
     },
-    "D:\\myProject\\ParserAvalonia\\ParserAvalonia.csproj": {
+    "D:\\ParserAvaloniaTest\\ParserAvalonia\\ParserAvalonia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\myProject\\ParserAvalonia\\ParserAvalonia.csproj",
+        "projectUniqueName": "D:\\ParserAvaloniaTest\\ParserAvalonia\\ParserAvalonia.csproj",
         "projectName": "ParserAvalonia",
-        "projectPath": "D:\\myProject\\ParserAvalonia\\ParserAvalonia.csproj",
+        "projectPath": "D:\\ParserAvaloniaTest\\ParserAvalonia\\ParserAvalonia.csproj",
         "packagesPath": "C:\\Users\\vasyl\\.nuget\\packages\\",
-        "outputPath": "D:\\myProject\\ParserAvalonia\\obj\\",
+        "outputPath": "D:\\ParserAvaloniaTest\\ParserAvalonia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vasyl\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -111,23 +111,23 @@
             },
             "Avalonia": {
               "target": "Package",
-              "version": "[11.0.2, )"
+              "version": "[11.0.5, )"
             },
             "Avalonia.Diagnostics": {
               "target": "Package",
-              "version": "[11.0.2, )"
+              "version": "[11.0.5, )"
             },
             "Avalonia.Fonts.Inter": {
               "target": "Package",
-              "version": "[11.0.2, )"
+              "version": "[11.0.5, )"
             },
             "Avalonia.ReactiveUI": {
               "target": "Package",
-              "version": "[11.0.2, )"
+              "version": "[11.0.5, )"
             },
             "Avalonia.Themes.Fluent": {
               "target": "Package",
-              "version": "[11.0.2, )"
+              "version": "[11.0.5, )"
             },
             "DotNetSeleniumExtras.WaitHelpers": {
               "target": "Package",
@@ -135,11 +135,11 @@
             },
             "HtmlAgilityPack": {
               "target": "Package",
-              "version": "[1.11.53, )"
+              "version": "[1.11.54, )"
             },
             "Microsoft.Playwright": {
               "target": "Package",
-              "version": "[1.38.0, )"
+              "version": "[1.39.0, )"
             },
             "Selenium.Support": {
               "target": "Package",
