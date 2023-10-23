@@ -1,0 +1,168 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:ParserAvalonia.ViewModels"
+             xmlns:asyncImageLoader="clr-namespace:AsyncImageLoader;assembly=AsyncImageLoader.Avalonia"
+             xmlns:parserAvalonia="clr-namespace:ParserAvalonia"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ParserAvalonia.Views.MainView"
+             x:DataType="vm:MainViewModel"
+             Background="Transparent">
+  <Design.DataContext>
+    <!-- This only sets the DataContext for the previewer in an IDE,
+         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+    <vm:MainViewModel />
+  </Design.DataContext>
+    <UserControl.Styles>
+        <StyleInclude Source="../Styles/ButtonStyle.axaml"/>
+        <StyleInclude Source="../Styles/TextBoxStyles.axaml"/>
+        <StyleInclude Source="../Styles/ListBoxStyles.axaml"/>
+        <StyleInclude Source="../Styles/StatusMsgStyle.axaml"/>
+        <StyleInclude Source="../Styles/PlylistInfoStyles.axaml"/>
+    </UserControl.Styles>
+
+
+    <Border Background="#074548"
+            CornerRadius="0" >
+
+
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="0.1*"/>
+				<RowDefinition Height="1*"/>
+				<RowDefinition Height="1*"/>
+				<RowDefinition Height="1*"/>
+				<RowDefinition Height="10*"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="1*"/>
+				<ColumnDefinition Width="1*"/>
+				<ColumnDefinition Width="1*"/>
+				<ColumnDefinition Width="1*"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBox Grid.Row="1"
+				Grid.Column="0"
+				Grid.ColumnSpan="3"
+				Text="{Binding UrlForSearch}"
+				Classes="defaultTextBox"/>
+
+			<Button Grid.Column="3"
+					Grid.Row="1"
+					Command="{Binding SearchSongsBtn}"
+					Classes="defaultBtn">
+				<TextBlock Text="Parse"/>
+			</Button>
+
+
+			<Border Grid.Column="3"
+					Grid.Row="2"
+					Grid.RowSpan="2"
+					Classes="defaultStatusMsgBorder"
+                    Opacity="{Binding StatusMsgOpacity}">
+
+                <TextBlock Text="{Binding StatusMsg}"/>
+            </Border>
+
+			<Border Grid.Row="2"
+					Grid.RowSpan="2"
+					Grid.Column="0"
+					Grid.ColumnSpan="2"
+					Classes="defaultImage"
+                    Opacity="{Binding PlaylistInfoOpacity}">
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="2*"/>
+						<RowDefinition Height="1*"/>
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="1*"/>
+						<ColumnDefinition Width="4*"/>
+					</Grid.ColumnDefinitions>
+
+					<Image Grid.Column="0"
+						   Grid.Row="0"
+						   Grid.RowSpan="2"
+						   asyncImageLoader:ImageLoader.Source="{Binding Playlist.Avatar}"/>
+
+					<TextBlock Grid.Row="0"
+							   Grid.Column="1"
+							   Text="{Binding Playlist.Name}"
+							   Classes="defaultPlaylistNameTextBlock"/>
+					<TextBlock Grid.Row="1"
+							   Grid.Column="1"
+							   Text="{Binding Playlist.Description}"
+							   Classes="defaultPlaylistDescriptionTextBlock"/>
+
+				</Grid>
+			</Border>
+
+            <Border Grid.Row="4" Grid.ColumnSpan="5"
+                Classes="defaultBorderInListBox"
+                Opacity="{Binding ListBoxOpacity}">
+                <ListBox ItemsSource="{Binding Playlist.Songs}"
+                         VerticalAlignment="Stretch"
+                         HorizontalAlignment="Stretch">
+                    <ListBox.Template>
+                        <ControlTemplate>
+                            <DockPanel LastChildFill="True">
+                                <Grid DockPanel.Dock="Top"
+                                      Height="30"
+                                      Classes="defaultTitles">
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Border Grid.Column="0"
+                                            Grid.ColumnSpan="5"
+                                            Classes="defaultBorderInListBoxForTitle"></Border>
+
+                                    <Label Grid.Column="0">Index</Label>
+                                    <Label Grid.Column="1">Song Name</Label>
+                                    <Label Grid.Column="2">Artist</Label>
+                                    <Label Grid.Column="3">Album</Label>
+                                    <Label Grid.Column="4">Duration</Label>
+
+                                </Grid>
+                                <ScrollViewer>
+									<ItemsPresenter></ItemsPresenter>
+								</ScrollViewer>
+                            </DockPanel>
+                        </ControlTemplate>
+                    </ListBox.Template>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Classes="defaultItems">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="3*"/>
+                                    <ColumnDefinition Width="3*"/>
+                                    <ColumnDefinition Width="3*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="{Binding Index}"
+                                           Grid.Column="0"/>
+                                <TextBlock Text="{Binding Name}"
+                                           Grid.Column="1"/>
+                                <TextBlock Text="{Binding Artist}"
+                                           Grid.Column="2"/>
+                                <TextBlock Text="{Binding Album}"
+                                           Grid.Column="3"/>
+                                <TextBlock Text="{Binding Duration}"
+                                           Grid.Column="4"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Border>
+
+		</Grid>
+	</Border>
+</UserControl>

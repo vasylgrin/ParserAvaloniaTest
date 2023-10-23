@@ -1,0 +1,33 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+
+
+            <!-- Add Controls for Previewer Here -->
+        </Border>
+    </Design.PreviewWith>
+
+    <Style Selector="Border.defaultBorderInListBoxForTitle">
+        <Setter Property="Background" Value="#AEBCBD"/>
+        <Setter Property="CornerRadius" Value="10,10,0,0"/>
+    </Style>
+
+    <Style Selector="Grid.defaultTitles Label">
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="16"/>
+    </Style>
+
+    <Style Selector="Border.defaultBorderInListBox">
+        <Setter Property="Background" Value="#C2D1D2"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="Margin" Value="10"/>
+	</Style>
+
+    <Style Selector="Grid.defaultItems TextBlock">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+    </Style>
+
+</Styles>

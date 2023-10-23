@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParserAvalonia", "ParserAvalonia.csproj", "{D44B1D69-A5B9-4F6A-BB37-DBE9DD070F4D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParserAvalonia.Desktop", "..\ParserAvalonia.Desktop\ParserAvalonia.Desktop.csproj", "{35366679-08DE-4144-BA62-DF027FDE6EDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D44B1D69-A5B9-4F6A-BB37-DBE9DD070F4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D44B1D69-A5B9-4F6A-BB37-DBE9DD070F4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D44B1D69-A5B9-4F6A-BB37-DBE9DD070F4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D44B1D69-A5B9-4F6A-BB37-DBE9DD070F4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35366679-08DE-4144-BA62-DF027FDE6EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35366679-08DE-4144-BA62-DF027FDE6EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35366679-08DE-4144-BA62-DF027FDE6EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35366679-08DE-4144-BA62-DF027FDE6EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92408862-8B31-465C-8235-A18D6217BC49}
+	EndGlobalSection
+EndGlobal

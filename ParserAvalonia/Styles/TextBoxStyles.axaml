@@ -1,0 +1,32 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <!-- Add Controls for Previewer Here -->
+
+            <TextBox Classes="defaultTextBox">sadfsadf</TextBox>
+
+        </Border>
+    </Design.PreviewWith>
+
+	<Style Selector="TextBox.defaultTextBox">
+		<Setter Property="Background" Value="#789A9C"/>
+		<Setter Property="CornerRadius" Value="10"/>
+		<Setter Property="TextAlignment" Value="Center"/>
+		<Setter Property="FontSize" Value="20"/>
+		<Setter Property="Margin" Value="5"/>
+	</Style>
+
+    <Style Selector="TextBox.defaultTextBox:focus /template/ Border">
+        <Setter Property="Background" Value="#93AEAF"/>
+        <Setter Property="CornerRadius" Value="10"></Setter>
+        <Setter Property="BorderBrush" Value="#789A9C"></Setter>
+    </Style>
+
+    <Style Selector="TextBox.defaultTextBox:pointerover /template/ Border">
+        <Setter Property="Background" Value="#93AEAF"/>
+        <Setter Property="CornerRadius" Value="10"></Setter>
+    </Style>
+
+    <!-- Add Styles Here -->
+</Styles>

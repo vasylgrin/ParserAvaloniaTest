@@ -1,0 +1,38 @@
+﻿<Styles xmlns="https://github.com/avaloniaui" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <!-- Add Controls for Previewer Here -->
+            <Button Classes="defaultBtn">
+                <TextBlock>fdsfsdf</TextBlock>
+            </Button>
+        </Border>
+    </Design.PreviewWith>
+
+    <Style Selector="Button.defaultBtn">
+        <Setter Property="Background" Value="#6A8F91"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+    </Style>
+
+    <Style Selector="Button TextBlock">
+        <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Margin" Value="5"/>
+    </Style>
+
+    <Style Selector="Button.defaultBtn:pointerover /template/ ContentPresenter">
+        <Setter Property="Background" Value="#A8BEBF"/>
+    </Style>
+
+    <Style Selector="Button.defaultBtn:pressed /template/ ContentPresenter">
+        <Setter Property="Background" Value="#93AEAF"/>
+    </Style>
+
+    <Style Selector="Button.defaultBtn:disabled /template/ ContentPresenter">
+        <Setter Property="Background" Value="#93AEAF"/>
+    </Style>
+</Styles>
